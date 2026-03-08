@@ -177,7 +177,7 @@ The Streamlit dashboard provides three main sections:
 
 Clone the repository:
 
-    git clone https://github.com/yourusername/infyvision.git
+    git clone https://github.com/uttamtripathi54/InfyVision.git
     cd infyvision
 
 Install dependencies:
