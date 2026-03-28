@@ -41,21 +41,21 @@ The application features a premium dark-themed dashboard powered by **Streamlit*
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                        STREAMLIT UI LAYER                        │
-│  Landing → Login → Dashboard → Performance → Risk → Sentiment   │
+│  Landing → Login → Dashboard → Performance → Risk → Sentiment    │
 │                                → Dataset Explorer                │
 ├──────────────────────────────────────────────────────────────────┤
 │                      APPLICATION LAYER                           │
 │  app_utils.py (shared helpers, caching, CSS injection)           │
 ├──────────────────────────────────────────────────────────────────┤
 │                       MODEL LAYER                                │
-│  ┌──────────┐  ┌──────────┐  ┌──────────────┐  ┌────────────┐  │
-│  │   LSTM   │  │   GRU    │  │ Transformer  │  │  Ensemble  │  │
-│  │ (64→32)  │  │ (64→32)  │  │ (64d, 4h, 2L)│  │  (Average) │  │
-│  └──────────┘  └──────────┘  └──────────────┘  └────────────┘  │
+│  ┌──────────┐  ┌──────────┐  ┌──────────────┐  ┌────────────┐    │
+│  │   LSTM   │  │   GRU    │  │ Transformer  │  │  Ensemble  │    │
+│  │ (64→32)  │  │ (64→32)  │  │ (64d, 4h, 2L)│  │  (Average) │    │
+│  └──────────┘  └──────────┘  └──────────────┘  └────────────┘    │
 ├──────────────────────────────────────────────────────────────────┤
 │                        DATA LAYER                                │
-│  DataFetcher (yFinance) → Technical Indicators (GARCH, RSI,     │
-│  MACD) → Sentiment (VADER NLP) → MinMaxScaler → Sequences       │
+│  DataFetcher (yFinance) → Technical Indicators (GARCH, RSI,      │
+│  MACD) → Sentiment (VADER NLP) → MinMaxScaler → Sequences        │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
