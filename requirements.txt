@@ -1,0 +1,14 @@
+# requirements.txt — InfyVision SaaS App
+numpy
+pandas
+yfinance
+scikit-learn
+tensorflow
+arch
+plotly
+matplotlib
+seaborn
+feedparser
+vaderSentiment
+streamlit
+scipy
